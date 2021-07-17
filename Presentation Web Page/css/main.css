@@ -1,0 +1,291 @@
+body {
+    background-color:rgba(34, 40, 49, 0.9);
+}
+h2, h4, h3 {
+    /* font-family: 'Slabo 27px', serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Varela Round', sans-serif; */
+    font-family: 'Concert One', cursive;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+button.btn{
+    font-family: 'Varela Round', sans-serif;
+}
+a.btn {
+    font-family: 'Slabo 27px', serif;
+}
+/* Background Header */
+.header-img {
+    background-image: linear-gradient(rgba(34, 40, 49, 0.86), rgba(34, 40, 49, 0.86)) ,url(../img/background-page.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+div.pad {
+    padding-top: 200px;
+}
+.fixed-top , .mod {
+    background-color:#222831;
+}
+.modal-backdrop {
+    z-index:unset;
+}
+/* modal */
+.btn-close {
+    background-color: #ffc107;
+    opacity: 1;
+}
+.modal-header {
+    border-bottom: none;
+}
+.modal-footer {
+    border-top: none;
+}
+/* modal-suscribe-check */
+img.img-check {
+    width: 100px;
+    margin-left: 185px;
+    padding-bottom: 20px;
+}
+/* fonts web */
+.log {
+    font-family: 'Concert One', cursive;
+}
+.pres {
+    font-family: 'Concert One', cursive;
+    font-size: 75px;
+}
+.btn-fonts {
+    font-family: 'Open Sans', sans-serif;
+}
+a.dropdown-item:hover{
+    background-color: #3a3e44;
+}
+@media only screen and (min-width:1220px){
+    .header-img {
+        background-image: linear-gradient(rgba(34, 40, 49, 0.98), rgba(34, 40, 49, 0.95)) ,url(../img/background-page.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+}
+.presentacion-img {
+    background-size: cover;
+}
+/* BARRA LATERAL SLOGAN */
+.bar-left {
+    margin-left: -30px;
+}
+.rotate {
+    transform: rotate(-90deg);
+}
+/* efecto animacion slogan */
+div.txt {
+    text-align: left;
+    list-style: none;
+    height: 22px;
+    overflow: hidden;
+}
+ul.sln {
+    list-style: none;
+    animation: cambiar 7s infinite;
+    margin-left: -10px!important;
+}
+@keyframes cambiar {
+    0% { margin-top: 0;}
+    20% { margin-top: 0;}
+
+    25% { margin-top: -26px;}
+    50% { margin-top: -26px;}
+
+    100% { margin-top: 0;}
+}
+/* BARRA DE REDES SOCIALES */
+.rs-nav:hover {
+    font-size: 44px;
+}
+/* TOOLTIP*/
+.nav a {
+    text-decoration: none;
+}
+.nav a span.tool {
+    position: absolute;
+    background-color: black;
+    padding: 4px 18px 4px 4px;
+    margin-left: -125px;
+    margin-top: 20px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 48%, 0% 0%);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 48%, 0% 0%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.nav a span.tool.w {
+    margin-left: -140px;
+}
+.nav a span.tool.s {
+    margin-left: -110px;
+}
+.nav a:hover span.tool {
+    visibility: visible;
+    opacity: 1;
+}
+/* ABOUT ME*/
+.img-about {
+    width: 25vw;
+    background-position: center;
+    background-size: cover;
+}
+/* texo de about */
+p.text-about {
+    text-align:justify;
+    font-size: 16px;
+    margin-bottom: -20px;
+}
+/* TOOLTIP */
+ul.nav li span.skill {
+    position: absolute;
+    background-color: black;
+    padding: 4px 8px 4px 8px;
+    margin-left: -60px;
+    margin-top: -40px;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0; 
+    transition: 0.4s;
+}
+ul.nav li span.skill.css,
+ul.nav li span.skill.sq {
+    margin-left: -54px;
+} 
+ul.nav li span.skill.boot,
+ul.nav li span.skill.js{
+    margin-left: -78px;
+}
+ul.nav li span.skill.jq,
+ul.nav li span.skill.csh {
+    margin-left: -68px;
+}
+ul.nav li span.skill.ph,
+ul.nav li span.skill.gi {
+    margin-left: -56px;
+}
+ul.nav li span.skill.pwb {
+    margin-left: -73px;
+}
+ul.nav li:hover span.skill {
+    visibility: visible;
+    opacity: 1;
+}
+/* SERVICES*/
+/* background Services */
+.img-services {
+    background-image:linear-gradient(rgba(34,40,49,0.92), rgba(34,40,49,0.92)), url(../img/background-services.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img-services-1 {
+    background-image: linear-gradient(rgba(34,40,49,0.69), rgba(34,40,49,0.69)), url(../img/services-1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 190px 0 190px 0;
+}
+.img-services-2 {
+    background-image: linear-gradient(rgba(34,40,49,0.69), rgba(34,40,49,0.69)), url(../img/services-4.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 190px 0 190px 0;
+}
+.img-services-3 {
+    background-image: linear-gradient(rgba(34,40,49,0.69), rgba(34,40,49,0.69)), url(../img/services-3.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 190px 0 190px 0;
+}
+.img-services-4 {
+    background-image: linear-gradient(rgba(34,40,49,0.69), rgba(34,40,49,0.69)), url(../img/services-2.png);
+    background-position: center;
+    background-size: cover;
+    padding: 190px 0 190px 0;
+}
+/* recuadro hover */
+.container div.capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222831fb;
+    transition: all 700ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.container div.capa p {
+    margin-top: 60px;;
+}
+.container div:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+    border: 1px solid #ffc107;
+}
+.container div:hover > .capa p{
+    margin-top: 60px;
+}
+/* PORTAFOLIO */
+.nav-tabs {
+    border-bottom: 4px solid #ffc107;
+}
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link.active {
+    border: 1px solid #ffc107;
+    background-color: #ffc107;
+}
+/* overlay */
+.overlay {
+    position: absolute;
+    background-color: #222831c4;
+    transition: all .3s ease;
+    opacity: 0;
+}
+.overlay-top {
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+}
+.overlay-top:hover {
+    opacity: 1;
+    height: 54%;
+}
+/* card */
+.card {
+    border: 0px;
+}
+/* CONTACT US */
+/* modal-formulario */
+div#terms .modal-content .modal-header h3 {
+    margin-left: 140px;
+}
+div#terms .modal-content .modal-footer {
+    justify-content: none;
+    margin-right: 150px;
+}
+
+/* modal message sent */
+div.modal-content {
+    border: 2px solid #ffc107;
+    border-radius: 10px;
+}
+img.img-modal-sent {
+    width: 54%;
+    clip-path: inset(15% 0% 15% 0%);
+    margin-left: 80px;
+    margin-top: -40px;
+    margin-bottom: -20px;
+}
+div.modal-header h3 {
+    margin-left: 155px;
+}

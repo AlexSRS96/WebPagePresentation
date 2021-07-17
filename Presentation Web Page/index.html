@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Rodriguez | Backend Developer</title>
+    <!-- Link de FontAwesone -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- Link de Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Open+Sans&family=Varela+Round&family=Slabo+27px&display=swap" rel="stylesheet">
+    <!-- link de Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- link de estilos -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- debes de colocar esto en el background autoria -->
+    <!-- <a href='https://www.freepik.es/vectores/fondo'>Vector de Fondo creado por starline - www.freepik.es</a> -->
+</head>
+<body>
+    <!-- header -->
+    <header id="index">
+        <!-- Nota Evaluar el container -->
+        <div class="container-fluid p-2 ps-0 pe-0 d-flex justify-content-between align-items-center bg-nav fixed-top">
+                <!-- Logo -->
+            <div class="col-2 ms-5 text-white">
+                <a href="#index" class="nav-link text-reset log"><span class="fs-1 text-warning"><</span><span class="fs-1 text-warning">/</span><span class="fs-2 log">ARS</span><span class="fs-1 text-warning">_></span></a>
+            </div>          
+            <!-- barra de navegacion principal -->
+            <div class="col-7 pe-5">
+                <nav class="navbar justify-content-end">
+                    <ul class="nav text-white">
+                        <li class="nav-item">
+                           <a href="#index" class="text-reset nav-link" aria-current="page">Home</a> 
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="text-reset nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">About</a>
+                            <ul class="dropdown-menu mod">
+                                <li><a href="#about-me" class="dropdown-item text-white">Skillset</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="text-reset nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portafolio" class="text-reset nav-link">Portafolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="text-reset nav-link">Contact</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="btn btn-warning nav-link text-reset" data-bs-toggle="modal" data-bs-target="#contenido"><i class="far fa-bell"></i> Suscribe</a>
+                            <!-- Modal-contenido -->
+                            <div class="modal fade" id="contenido" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content mod">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title text-warning"><i class="fas fa-bell"></i> 
+                                                Receive notifications</h4>
+                                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Subscribe to receive notifications of my next projects</p>
+                                            <div class="form-floating mb-3">
+                                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                                <label for="email" class="text-muted">Email address</label>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-warning" data-bs-dismiss="modal">Cancel</button>
+                                            <!-- terminar el button de aceptar -->
+                                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#sucribe-successfull" data-bs-dismiss="modal">Ok</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Suscribe sucessfull -->
+                            <div class="modal fade" id="sucribe-successfull" tabindex="-2">
+                                <div class="modal-dialog">
+                                    <div class="modal-content mod">
+                                        <div class="modal-header">
+                                            <h2 class="modal-tittle text-warning text">Thank you</h2>
+                                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body pb-5">
+                                            <img src="./img/check.png" alt="Successfull" class="img-check">
+                                            <p class="text-center text-white">Thanks for subscribing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Fin de barra de navegacion principal -->
+        </div>    
+        <!-- Presentacion Header -->
+        <div class="header-img pad pb-5 d-flex text-white align-items-center">
+            <!-- Slogan -->
+            <div class="col-1 text-center bar-left me-5 h5 pb-5">
+                    <i class="fas fa-globe-americas rotate"></i>
+                    <div class="txt rotate mt-5">
+                        <ul class="sln">
+                            <li>WORLD</li>
+                            <li>NOW</li>
+                        </ul>
+                    </div>
+                    <p class="rotate mt-5">THE</p>
+                    <p class="rotate mt-5">CHANGE</p>
+                    <p class="rotate mt-5">TO</p>
+                    <p class="rotate mt-5">DARE</p>
+                    <i class="fas fa-laptop-code rotate mt-4"></i>
+            </div>
+            <!-- Texto presentacion -->
+            <div class="container  text-center d-flex justify-content-center mb-5">
+                    <div class="col-8 ">
+                        <h1 class="text-start pres">Hello World! <br>I am <br><span class="typed pres"></span></h1>
+                        <p class="text-start fs-2">___________________</p>
+                        <div class="d-flex pt-4 text-white">
+                            <div class="col-4 d-grid me-3">
+                                <a href="#" class="btn btn-warning rounded-pill btn-fonts"><i class="fas fa-play"></i>
+                                    My Presentation
+                                </a>
+                            </div>
+                            <div class="col-4 d-grid">
+                                <a href="#" class="btn btn-outline-warning rounded-pill btn-fonts"><i class="fab fa-github"></i>                             
+                                    Github Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-6 mb-5 ">
+                        <img src="./img/programador.gif" alt="Imagen de fondo" class="presentacion-img">
+                    </div> -->
+            </div>
+            <!-- Barra de Navegacion Redes Sociales -->
+            <div class="text-end col-1 pe-4 pb-5 mb-5 ">
+                    <nav class="nav flex-column text-white fs-3">
+                        <a href="#" class="text-reset pt-2 rs-nav"><span><i class="fab fa-facebook-f"></i></span><span class="fs-6 tool">Facebook</span></a>
+                        <a href="#" class="text-reset pt-2 rs-nav"><span><i class="fab fa-linkedin-in"></i></span><span class="fs-6 tool">Linkedin</span></a>
+                        <a href="#" class="text-reset pt-2 rs-nav"><span><i class="fab fa-twitter"></i></span><span class="fs-6 tool">Twitter</span></a>
+                        <a href="#" class="text-reset pt-2 rs-nav"><span><i class="fab fa-whatsapp"></i></span><span class="fs-6 tool w">Whatsapp</span></a>
+                        <a href="#" class="text-reset pt-2 rs-nav"><span><i class="fas fa-glasses"></i></span><span class="fs-6 tool">Zoom</span></a>
+                        <a href="#" class="text-reset pt-2 rs-nav"><span><i class="fab fa-skype"></i></span><span class="fs-6 tool s">Skype</span></a>
+                    </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Fin-header -->
+    <!-- About Me -->
+    <section class="container-fluid p-5 text-white" id="about-me">
+        <h2 class="text-center text-warning">About me</h2>
+        <div class="container d-flex justify-content-center align-items-center">
+           <div class="col-4">
+               <img src="./img/Photo-Progranmer.png" alt="Foto de Presentacion" class="img-about">
+           </div>
+           <!-- description -->
+           <div class="col-6 p-5">
+                <p class="text-about">
+                    Hello, my name is Alexander Rodriguez, I am a backend developer. I am currently working in the freelance world developing projects for people who require my services. 
+                    At the moment I am studying Systems Engineering in order to develop, and become a professional. I offer you plans  and strategies for your business through technological tools that will guarantee a better acceptance for your client portfolio.</p>
+                <span class="fs-1 text-warning">______________</span>
+                <div class="d-flex mt-4">
+                    <div class="col-6 d-grid me-3">
+                        <button class="btn rounded-pill btn-warning btn-fonts"><i class="fab fa-github"></i> Repositorio</button>
+                    </div>
+                    <div class="col-6 d-grid">
+                        <button class="btn rounded-pill btn-warning btn-fonts"><i class="fas fa-arrow-circle-down"></i> Download CV</button>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <!-- Skillset -->
+        <div class="container mt-5 pb-3 d-flex align-items-center justify-content-center">
+            <div class="col-4 me-4">
+                <h2 class="text-center text-warning">Skillset</h2>
+                <p class="text-center">In this section you can see some of the technologies in which I have experience developing projects, these can be seen <br> in my Github repository.</p>
+            </div>
+            <div class="col-6 ps-2 pe-2 text-center shadow-lg">
+                <ul class="nav pb-2">
+                    <li class="col-2 nav-item pt-3 pb-2">
+                        <img src="./img/html5.png" alt="" class="w-75">
+                        <span class="skill">Html</span>
+                    </li>
+                    <li class="col-2 nav-item pt-3 pb-2">
+                        <img src="./img/css..png" alt="" class="w-75">
+                        <span class="skill css">Css</span>
+                    </li>
+                    <li class="col-2 nav-item pt-3 pb-2">
+                        <img src="./img/Bootstrap.png" alt="" class="w-75">
+                        <span class="skill boot">Bootstrap</span>
+                    </li>
+                    <li class="col-2 nav-item pt-3 pb-2">
+                        <img src="./img/javascript.png" alt="" class="w-75">
+                        <span class="skill js">Javascript</span>
+                    </li>
+                    <li class="col-2 nav-item pt-3 pb-2">
+                        <img src="./img/jquey..png" alt="" class="w-75">
+                        <span class="skill jq">jQuery</span>
+                    </li>
+                    <li class="col-2 nav-item pt-3 pb-2">
+                        <img src="./img/php.png" alt="" class="w-75">
+                        <span class="skill ph">Php</span>
+                    </li> 
+                    <li class="col-2 nav-item pt-3 pb-2">
+                        <img src="./img/sql.png" alt="" class="w-75">
+                        <span class="skill sq">Sql</span>
+                    </li>
+                    <li class="col-2 nav-item pt-3 pb-2">
+                        <img src="./img/csharp.png" alt="" class="w-75">
+                        <span class="skill csh">Csharp</span>
+                    </li>
+                    <li class="col-2 nav-item pt-3 pb-2">
+                        <img src="./img/java.png" alt="" class="w-75">
+                        <span class="skill ph">Java</span>
+                    </li>
+                    <li class="col-2 nav-item pt-3 pb-2">
+                        <img src="./img/git.png" alt="" class="w-75">
+                        <span class="skill gi">Git</span>
+                    </li>
+                    <li class="col-2 nav-item pt-3 pb-2">
+                        <img src="./img/powerbi.png" alt="" class="w-75">
+                        <span class="skill pwb">PowerBI</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Services -->
+    <section class="container-fluid img-services p-5 text-center" id="services">
+        <h2 class="text-center text-warning">My services</h2>
+        <p class="text-center text-white">These are my services that I put at your disposal for any project where you need me.</p>
+        <div class="container d-flex justify-content-center pt-4 text-white pb-5 pt-2 serv-font">
+            <div class="card col-3 img-services-1 justify-content-center me-3 border-secondary">
+                <span class="fs-1"><i class="fas fa-laptop-code"></i></span>
+                <h4>Backend Developer</h4>
+                <div class="capa p-5 justify-content-center">
+                    <p class="text-white text-center">
+                        Experience developing applications on Web and Desktop platforms. Knowledge of multiple programming languages ​​such as C #, Java and PHP. In addition to ensuring a satisfactory result for your business.</p>
+                    <a href="https://web.whatsapp.com/" class="mt-2 btn btn-outline-warning" target="_blank"><i class="fab fa-whatsapp"></i> Contact</a>
+                </div>
+            </div>
+            <div class="card col-3 justify-content-center img-services-2 me-3 border-secondary">
+                <span class="fs-1"><i class="fas fa-desktop"></i></span>
+                <h4>Web Design</h4>
+                <div class="capa p-5">
+                    <p class="text-white text-center">
+                        Development of professional responsive web pages so that you can publicize your business or personal information to everyone, who wants to visit you through different devices.</p>
+                        <a href="https://web.whatsapp.com/" class="mt-2 btn btn-outline-warning" target="_blank"><i class="fab fa-whatsapp"></i> Contact</a>
+                </div>
+            </div>
+            <div class="card col-3 justify-content-center img-services-3 me-3 border-secondary">
+                <span class="fs-1"><i class="far fa-hdd"></i></span>
+                <h4>Technical Support</h4>
+                <div class="capa p-5 justify-content-center">
+                    <p class="text-white text-center">Preventive and corrective maintenance of computer equipment (Hardware and Software). Assembly, repair, diagnosis of computer equipment. Advanced knowledge in different operating systems.</p>
+                    <a href="https://web.whatsapp.com/" class="mt-2 btn btn-outline-warning" target="_blank"><i class="fab fa-whatsapp"></i> Contact</a>
+                </div> 
+            </div>
+            <div class="card col-3 justify-content-center img-services-4 border-secondary">
+                <span class="fs-1"><i class="fas fa-database"></i></span>
+                <h4>Database Design.</h4>
+                <div class="capa p-5 justify-content-center">
+                    <p class="text-white text-center">                        
+                        Database creation, implementation and administration using different database managers such as SQL Server, MySql and Oracle, also the generation of reports using tools like Power BI.</p>
+                    <a href="https://web.whatsapp.com/" class="mt-2 btn btn-outline-warning" target="_blank"><i class="fab fa-whatsapp"></i> Contact</a>
+                </div>           
+            </div>
+        </div>
+    </section>
+    <!-- Portafolio -->
+   <section class="container-fluid p-5 text-white" id="portafolio">
+        <h2 class="text-center text-warning">My Portafolio</h2>
+        <p class="text-center">Here you will find all my projects made using different technologies, in which I have gained experience.</p>
+        <div class="container pt-4 text-dark">
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active text-white bg-warning" aria-current="page">ALL</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">POPULAR</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">LASTEST</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">NEXT PROJECTS</a>
+                </li>
+            </ul>
+            <div class="container pt-4 shadow nav justify-content-center pb-3">
+                <!-- card N#1 -->
+                <div class="card m-4" style="width:18rem;">
+                    <img src="./img/Proyecto.jpg" alt="project" class="w-100">
+                    <div class="overlay overlay-top">
+                        <div class="container col-8">
+                            <ul class="nav d-block pt-4 pb-3 mt-2">
+                                <li class="nav-item d-grid pb-4">
+                                    <a href="#" class="btn btn-danger"><i class="fab fa-github"></i> Github</a>
+                                </li>
+                                <li class="nav-item d-grid pb-4">
+                                    <a href="#" class="btn btn-warning text-white"><i class="fas fa-play-circle"></i> Demo</a>
+                                </li>
+                                <li class="nav-item d-grid pb-4">
+                                    <a href="#" class="btn btn-primary"><i class="fas fa-globe-americas"></i> Visit page</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5>Sistema de Ventas</h5>
+                        <p>Lorem ipsum dolor sit, consectetur adipisicing elit. Adipisci aut est ut ipsam reiciendis tempora quos laudantium eos dolor libero!</p>
+                    </div>
+                </div>
+                <!-- card N#2 -->
+                <div class="card m-4" style="width:18rem;">
+                    <img src="./img/Proyecto.jpg" alt="project" class="w-100">
+                    <div class="overlay overlay-top">
+                        <div class="container col-8">
+                            <ul class="nav d-block pt-4 pb-3 mt-2">
+                                <li class="nav-item d-grid pb-4">
+                                    <a href="#" class="btn btn-danger"><i class="fab fa-github"></i> Github</a>
+                                </li>
+                                <li class="nav-item d-grid pb-4">
+                                    <a href="#" class="btn btn-warning text-white"><i class="fas fa-play-circle"></i> Demo</a>
+                                </li>
+                                <li class="nav-item d-grid pb-4">
+                                    <a href="#" class="btn btn-primary"><i class="fas fa-globe-americas"></i> Visit page</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5>Sistema de Ventas</h5>
+                        <p>Lorem ipsum dolor sit, consectetur adipisicing elit. Adipisci aut est ut ipsam reiciendis tempora quos laudantium eos dolor libero!</p>
+                    </div>
+                </div>
+                <!-- card N#3 -->
+                <div class="card m-4" style="width:18rem;">
+                    <img src="./img/Proyecto.jpg" alt="project" class="w-100">
+                    <div class="overlay overlay-top">
+                        <div class="container col-8">
+                            <ul class="nav d-block pt-4 pb-3 mt-2">
+                                <li class="nav-item d-grid pb-4">
+                                    <a href="#" class="btn btn-danger"><i class="fab fa-github"></i> Github</a>
+                                </li>
+                                <li class="nav-item d-grid pb-4">
+                                    <a href="#" class="btn btn-warning text-white"><i class="fas fa-play-circle"></i> Demo</a>
+                                </li>
+                                <li class="nav-item d-grid pb-4">
+                                    <a href="#" class="btn btn-primary"><i class="fas fa-globe-americas"></i> Visit page</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5>Sistema de Ventas</h5>
+                        <p>Lorem ipsum dolor sit, consectetur adipisicing elit. Adipisci aut est ut ipsam reiciendis tempora quos laudantium eos dolor libero!</p>
+                    </div>
+                </div>
+                <div class="m-4 mt-0">
+                    <a href="#" class="btn btn-warning btn-fonts rounded-pill">see more <i class="fas fa-angle-double-down"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+   </section>
+   <!-- Contact -->
+   <section class="container-fluid p-5" id="contact">
+       <h2 class="text-center text-warning">Contact Us</h2>
+       <p class="text-center text-white">You can find me and communicate with me through these means or send me a message.</p>
+       <div class="container p-4 d-flex align-items-center">
+            <!-- Medios de contacto -->
+            <div class="col-6">
+                <nav class="nav justify-content-center">
+                    <a href="#" class="col-4 m-1 pt-4 pb-4 btn btn-outline-warning">
+                        <span class="fs-1"><i class="fas fa-phone-volume"></i></span>
+                        <p>Call Me</p>  
+                    </a>
+                    <a href="#" class="col-4 m-1 btn pt-4 pb-4 btn-outline-warning">
+                        <span class="fs-1"><i class="fas fa-envelope"></i></span>
+                        <p>Message</p>  
+                    </a>
+                    <a href="#" class="col-4 m-1 btn pt-4 pb-4 btn-outline-warning">
+                        <span class="fs-1"><i class="fab fa-linkedin-in"></i></span>
+                        <p>Linkedin</p>  
+                    </a>
+                    <a href="#" class="col-4 m-1 btn  pt-4 pb-4 btn-outline-warning">
+                        <span class="fs-1"><i class="fab fa-whatsapp"></i></span>
+                        <p>Whatsapp</p>  
+                    </a>
+                    <a href="#" class="col-4 m-1 btn  pt-4 pb-4 btn-outline-warning">
+                        <span class="fs-1"><i class="fab fa-github"></i></span>
+                        <p>Github</p>  
+                    </a>
+                    <a href="#" class="col-4 m-1 btn pt-4 pb-4 btn-outline-warning">
+                        <span class="fs-1"><i class="fab fa-telegram-plane"></i></span>
+                        <p>Telegram</p>  
+                    </a>
+                </nav>
+            </div>
+            <!-- Formulario -->
+            <div class="col-6 p-3">
+                <h5 class="text-center text-warning">Send me a message</h5>
+                <form class="mt-3">
+                    <div class="form-floating m-2">
+                        <input type="text" class="form-control" id="yourname" placeholder="Your Name">
+                        <label for="yourname">Name</label>
+                    </div>
+                    <div class="form-floating m-2">
+                        <input type="email" class="form-control" id="youremail" placeholder="example@email.com">
+                        <label for="youremail">Email</label>
+                    </div>
+                    <div class="nav">
+                        <div class="col-3 m-2">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Country</option>
+                                <option value="1">Peru</option>
+                                <option value="2">Chile</option>
+                                <option value="3">Argentina</option>
+                                <option value="4">...</option>
+                            </select>
+                        </div>
+                        <div class="col-4 m-2">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>City</option>
+                                <option value="1">Lima</option>
+                                <option value="2">Junin</option>
+                                <option value="3">Cuzco</option>
+                                <option value="4">...</option>
+                            </select>
+                        </div>
+                        <div class="col-4 me-2">
+                            <div class="mt-2">
+                                <input type="text" class="form-control" id="yourtelf" placeholder="Optional Telf">
+                            </div>
+                        </div>
+                        <div class="m-2">
+                            <textarea class="form-control" cols="70" rows="4" id="yourmesagge" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-check m-2">
+                            <input class="form-check-input" type="checkbox" value="" id="check">
+                            <label class="form-check-label text-white" for="flexCheckDefault">
+                              I accept the privacy policies <a href="#" class="text-decoration-none text-warning" data-bs-toggle="modal" data-bs-target="#terms">Click here</a>
+                            </label>
+                            <!-- Modal - Formulario -->
+                            <div class="modal" id="terms" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-scrollable">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title text-warning">Privacy Policy</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="text-white">This Privacy Policy establishes the terms in which it uses and protects the information that is provided by its users when using this website. This website is committed to the security of its users' data. When we ask you to fill in the fields of personal information with which you can be identified, we do so ensuring that it will only be used in accordance with the terms of this document. However, this Privacy Policy may change over time or be updated, so we recommend and emphasize that you continually review this page to ensure that you agree with such changes. <br> This website may collect personal information such as: Name, contact information such as your email address and demographic information. Likewise, when necessary, specific information may be required to process a claim or perform a verification. <br>This website may contain links to other sites that may be of interest to you. Once you click on these links and leave our page, we no longer have control over the site to which you are redirected and therefore we are not responsible for the terms or privacy or the protection of your data on those other third party sites. These sites are subject to their own privacy policies, so it is recommended that you consult them to confirm that you agree with them.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">I Agree</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-warning m-2" type="button" data-bs-toggle="modal" data-bs-target="#submit-message">Submit Message</button>
+                        <!-- Modal-submit -->
+                        <div class="modal" id="submit-message" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title text-warning">Message sent</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-white">
+                                        <img src="./img/send-img.png" alt="imagen mensaje" class="img-modal-sent">
+                                        <p class="text-center">Hello! Thanks for sending me a message. I will contact you very soon.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+   </section>
+   <!-- footer -->
+   <footer class="bg-dark p-5 pt-2 pb-2"> 
+        <div class="container text-white text-center">
+            <a href="#index" class="nav-link text-reset log"><span class="fs-1 text-warning"><</span><span class="fs-1 text-warning">/</span><span class="fs-2 log">ARS</span><span class="fs-1 text-warning">_></span></a>
+            <p>Web Backend Developer - Lima-Peru <i class="fas fa-map-marker-alt fs-6"></i> </p>
+            <ul class="nav justify-content-center align-items-center pt-0 pb-0 m-0">
+                <li class="nav-item">
+                    <a href="#index" class="nav-link text-reset">Home</a>
+                </li>
+                <span>|</span>
+                <li class="nav-item">
+                    <a href="#about-me" class="nav-link text-reset">About Me</a>
+                </li>
+                <span>|</span>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link text-reset">Services</a>
+                </li>
+                <span>|</span>
+                <li class="nav-item">
+                    <a href="#portafolio" class="nav-link text-reset">Portafolio</a>
+                </li>
+                <span>|</span>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link text-reset">Contact</a>
+                </li>       
+            </ul>
+            <br>
+            <p>Copyright &copy; 2020 @AlexRodriguez</p>
+            <p>All Rights Reserved</p>
+        </div>
+   </footer>
+  
+    <!-- Typed Script -->
+    <script src="./js/typed.js"></script>
+    <!-- Main Script -->
+    <script src="./js/main.js"></script>
+    <!-- Jquery Script -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!-- Popper Script -->
+    <script src="./js/popper.min.js"></script>
+    <!-- Bootstrap Script -->
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
